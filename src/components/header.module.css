@@ -1,0 +1,4 @@
+/*Style modules prevent style collisions*/
+.example {
+  color: slategray;
+}
