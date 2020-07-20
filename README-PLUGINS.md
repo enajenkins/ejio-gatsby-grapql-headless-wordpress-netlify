@@ -104,5 +104,34 @@ Extract the innerText from a snippet of HTML
 npm install innertext
 
 
+## gatsby-plugin-manifest
+https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/?=manifest
+https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
+http://caniuse.com/#feat=web-app-manifest
 
+The web app manifest (part of the PWA specification) enabled by this plugin allows users to add your site to their home screen on most mobile browsers — see here. The manifest provides configuration and icons to the phone.
+
+This plugin provides several features beyond manifest configuration to make your life easier, they are:
+
+* Auto icon generation - generates multiple icon sizes from a single source
+* Favicon support
+* Legacy icon support (iOS)1
+* Cache busting
+* Localization - Provides unique manifests for path-based localization (Gatsby Example)
+
+Each of these features has extensive configuration available so you are always in control.
+
+## Install
+npm install --save gatsby-plugin-manifest
+
+
+## gatsby-plugin-offline
+https://www.gatsbyjs.org/packages/gatsby-plugin-offline/
+
+Adds drop-in support for making a Gatsby site work offline and more resistant to bad network connections. It uses Workbox Build to create a service worker for the site and loads the service worker into the client.
+
+If you’re using this plugin with gatsby-plugin-manifest (recommended) this plugin should be listed after that plugin so the manifest file can be included in the service worker.
+
+### Install
+npm install --save gatsby-plugin-offline
 

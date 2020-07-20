@@ -55,6 +55,18 @@ module.exports = {
         hostingWPCOM: false,// self hosted or WP hosted?
       }, 
     },
-    `gatsby-plugin-react-helmet` 
+    `gatsby-plugin-react-helmet`,
+    { // manifest contains information that allows your app to be accepted as a PWA
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsby POC`,
+        short_name: `GatsbyPOC`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
+        display: `standalone`,
+      },
+    },
+    `gatsby-plugin-offline` // for PWA
   ],
 }
