@@ -25,11 +25,12 @@ export default ({data}) => {
 
       {data.allWordpressPost.nodes.map(node => (
         <Post 
-        image={node.featured_media.source_url} 
-        title={node.title}  
-        excerpt={node.excerpt} 
-        readMore={node.slug}
-      /> 
+          alt = {node.featured_media.slug}
+          image = {node.featured_media.source_url} 
+          title = {node.title}  
+          excerpt = {node.excerpt} 
+          readMore = {node.slug}
+        /> 
      ))}
     </PrimaryLayout>
   )
@@ -46,6 +47,7 @@ export const query = graphql`
       excerpt
       featured_media {
         source_url
+        slug
       }
     }
   } 

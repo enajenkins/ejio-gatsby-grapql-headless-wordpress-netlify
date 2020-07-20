@@ -9,14 +9,16 @@ const PrimaryLayout = (props) => (
 <div>
 <SEO />
   <Header />
-  <div className="container">
-    <div className="d-flex justify-content-center">
-    {/* you can also pass in column size names */}
-      <div className={props.column}>
-      {props.children}
+  <main>
+    <div className="container">
+      <div className="d-flex justify-content-center">
+      {/* you can also pass in column size names */}
+        <div className={props.column}>
+        {props.children}
+        </div>
       </div>
     </div>
-  </div>
+  </main>
   <Footer />
 </div>
 
