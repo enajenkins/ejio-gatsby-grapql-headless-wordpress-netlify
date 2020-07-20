@@ -97,18 +97,12 @@ npm install --save gatsby-plugin-react-helmet react-
 
 
 ## innertext
+https://www.npmjs.com/package/innertext
 Extract the innerText from a snippet of HTML
 
 ### Installation
 npm install innertext
 
-### Usage
-Pass it a string containing some HTML.
 
-var innertext = require('innertext');
- 
-var text = innertext('<h1>Heading text <em>with</em> <b>some</b> <u>markup</u></h1>');
- 
-console.log(text); // 'Heading text with some markup'
 
 

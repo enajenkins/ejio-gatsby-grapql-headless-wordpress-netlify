@@ -13,9 +13,9 @@ export default (props) => (
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
     {/* to avoid issues, create the bootstrap link as a gatsby link (<Link to="/home">Home</Link>) and provide a to location  */}
-      <Nav.Link as={Link} to="/">Home</Nav.Link>
-      <Nav.Link as={Link} to="/about-us">About Us</Nav.Link>      
-      <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+      <Nav.Link as={Link} to="/"><b className="text-dark">Home</b></Nav.Link>
+      <Nav.Link as={Link} to="/about-us"><b className="text-dark">About Us</b></Nav.Link>      
+      <Nav.Link as={Link} to="/contact"><b className="text-dark">Contact</b></Nav.Link>
       {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
