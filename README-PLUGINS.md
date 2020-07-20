@@ -135,3 +135,39 @@ If you’re using this plugin with gatsby-plugin-manifest (recommended) this plu
 ### Install
 npm install --save gatsby-plugin-offline
 
+## WP Webhooks
+https://wordpress.org/plugins/wp-webhooks/
+
+### Description
+If you want to do certain actions on your WordPress site from somewhere else, this is your plugin! It will turn your website into an optimized webhook system so that you can connect your third party apps manually, via Zapier, automate.io or other third-party services to your WordPress website.
+It allows you to receive data from other services to, for example, create a user or a post on your WordPress website, as well as it can send data for you on certain actions.
+It’s time to automate your WordPress website on a whole new level!
+
+#### USAGE EXAMPLES
+Create a WordPress user as soon as a new signup happens on Teachable
+Create a WordPress post using Alexa (Voice Control)
+Create WordPress users from an Excel list
+Send data to intercom when a user logs into your WordPress website
+Fire your own PHP code based on incoming data
+
+#### FEATURES
+Create, Delete, Search and Retrieve users via external webhooks on your website
+Create, Delete, Search and Retrieve posts via external webhooks on your website (Custom post types supported)
+Recieve data to a custom webhook action (Do whatever you want with the incoming data)
+Send data on login, register, update and deletion
+Send data on new post, update post and delete post
+Send data on custom WordPress hook calls
+Authenticate every “Send data” trigger. Supported are: API Key, Bearer Token and Basic Auth
+Add multiple Webhooks for each trigger and also for the actions
+Test all of the available triggers with a single click
+Test all of the available actions within the plugin
+Advanced settings for each webhook trigger url
+Manage all of our extensions within the plugin
+Fully translatable and ready for multilingual sites
+Full WPML Support
+Advanced Developer Hooks
+Optimized settings page for more control
+Supports XML, JSON, plain text/HTML and form urlencode
+Supports the following request methods: POST (Default), GET, HEAD, PUT, DELETE, TRACE, OPTIONS, PATCH
+Supports Zapier, Integromat, automate.io and more
+
