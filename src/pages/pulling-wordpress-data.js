@@ -22,7 +22,7 @@ export default ({data}) => {
   console.log(data);
   return (
     <PrimaryLayout column="col-xs-6">
-      <h1>Home</h1>
+      <h1>Wordpress Data</h1>
       <h2>This page is pulling in data from a headless Wordpress CMS</h2>
       {data.allWordpressPost.nodes.map(node => (
         <Post 

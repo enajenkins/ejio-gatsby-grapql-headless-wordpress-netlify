@@ -49,8 +49,9 @@ module.exports = {
       },
     },
     { resolve: `gatsby-transformer-remark` },
-    { resolve: `gatsby-source-wordpress`, options: {
-        baseUrl: `codingsrc.com`,//base url of the wordpress blog you are pulling content from. if you are using https, you will have issues if it has a certificate
+    { resolve: `gatsby-source-wordpress`, 
+      options: {
+        baseUrl: `onethingaday.info`,// base url of the wordpress blog you are pulling content from with no trailing slashes, no protocol (mywebsite.com). if you are using https, you will have issues if it has a certificate
         protocol: `http`,
         hostingWPCOM: false,// self hosted or WP hosted?
       }, 
