@@ -9,14 +9,18 @@ import {Link} from "gatsby"
 export default (props) => (
   <header>
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="/">Gatsby / Graphql / Headless Wordpress (Jamstack) / Confluence POC</Navbar.Brand>
+      <Navbar.Brand href="/">Gatsby / Graphql / Markdown Data / Headless Wordpress CMS Data / Confluence Data POC</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
         {/* to avoid issues, create the bootstrap link as a gatsby link (<Link to="/home">Home</Link>) and provide a to location  */}
           <Nav.Link as={Link} to="/"><b className="text-dark">Home</b></Nav.Link>
           <Nav.Link as={Link} to="/about-us"><b className="text-dark">About Us</b></Nav.Link>      
-          <Nav.Link as={Link} to="/contact"><b className="text-dark">Contact</b></Nav.Link>
+          {/* <Nav.Link as={Link} to="/contact"><b className="text-dark">Contact</b></Nav.Link> */}
+          <Nav.Link as={Link} to="/getting-started"><b className="text-dark">Getting Started</b></Nav.Link>
+          <Nav.Link as={Link} to="/pulling-confluence-data"><b className="text-dark">Confluence Data</b></Nav.Link>
+          <Nav.Link as={Link} to="/pulling-markdown"><b className="text-dark">Markdown Data</b></Nav.Link>
+          <Nav.Link as={Link} to="/pulling-wordpress-data"><b className="text-dark">Wordpress Data</b></Nav.Link>
           {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
