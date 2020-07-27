@@ -1,18 +1,17 @@
-// in order to interact with the node API you have to exportand use onCreateNode
-// refer to https://www.gatsbyjs.org/docs/node-apis/
-
-// onCreateNode - Called when a new node is created. Plugins wishing to extend or transform nodes created by other plugins should implement this API.
 const { createFilePath } = require("gatsby-source-filesystem");
 const path = require("path"); // to resolve the path to the component
 
-// destructure only the node here...
+// in order to interact with the node API you have to export and use onCreateNode
+// refer to https://www.gatsbyjs.org/docs/node-apis/
+// onCreateNode - Called when a new node is created. Plugins wishing to extend or transform nodes created by other plugins should implement this API.
+// destructure the node here...
 // arg actions will destructure the createNodeField function and enable you to import a field in MarkdownRemark so we can add it to the graphql query object
 exports.onCreateNode = ({node, getNode, actions}) => {
   // print the node name while building
   // then you can create a slug (/first-post/, /second-post/) whenever you create a post so you can add them to your markdown Graphql
-  // console.log(node.internal.type);
+  console.log(node.internal.type);
 
-  //create slug
+  // create slug
   // check to see if node type is "MarkdownRemark". if so, create a file path
   // base path is where the .md files are located
   const { createNodeField } = actions;
